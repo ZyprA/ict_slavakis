@@ -5,7 +5,7 @@ def Tn(n,t):
     result = 1
     for i in range(n):
         k = i + 1
-        result += 2/(1+16*k^2)*math.cos(2*k*t) + 8*k/(1+16*k^2)*math.sin(2*k*t)
+        result += 2*math.cos(2*k*t)/(1+16*k^2) + 8*k*math.sin(2*k*t)/(1+16*k^2)
     result = result * 0.504
     return result
 
